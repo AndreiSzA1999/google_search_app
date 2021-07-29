@@ -279,7 +279,7 @@ class _SecondPagePageState extends State<SecondPagePage> {
                       children: [
                         ImagenCard(
                           urlImagen:
-                              "https://s.france24.com/media/display/3fc320f8-d6ed-11eb-a17f-005056a964fe/w:1280/p:16x9/TRUMP%201%20%281%29.webp",
+                              "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/07/14/16262491816801.jpg",
                           titular: "Trump reaparece en..",
                           periodico: "www.france24.com",
                         ),
@@ -342,7 +342,7 @@ class ImagenCard extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => ThirdPage()),
+          MaterialPageRoute(builder: (context) => ThirdPage(urlImagen)),
         );
       },
       child: Padding(
